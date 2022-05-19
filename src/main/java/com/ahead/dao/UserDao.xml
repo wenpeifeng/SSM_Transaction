@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahead.dao.UserDao">
+
+    <insert id="insert" parameterType="com.ahead.pojo.Users">
+        insert into users values(#{userId},#{uName},#{uPass})
+    </insert>
+</mapper>
